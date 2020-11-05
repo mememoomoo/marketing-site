@@ -1,0 +1,280 @@
+/* TABLE OF CONTENTS
+---------------------
+#1 - CSS Variables
+     Color Palette
+     Document Fonts
+---------------------
+#2 - Universal Document Properties
+    HTML, Body
+    h1, h2
+    .underline
+    a
+---------------------
+#3 - Navigation
+    Navigation Logo
+    Navigation Conainer
+    Top Nav Items
+---------------------
+#4 - Home Header
+---------------------
+#5 - Buttons
+---------------------
+#6 - 
+---------------------
+#7 - 
+---------------------
+#8 - 
+---------------------
+#9 - 
+---------------------
+#10 - 
+---------------------
+*/
+
+/* #1 - CSS Variables */
+
+:root {
+    /* Color Palette */
+    --bright-green: #20DFAC;
+    --black: #001F35;
+    --borders: rgba(0, 0, 0, 0.05);
+    --light-grey: #F3F6F9;
+    --text: #52565C;
+    --labels: #6A7077;
+    --blue: #2687D0;
+    --yellow: #FFD595;
+    --white: #FFFFFF;
+    --lighter-dark: rgba(49, 74, 92, 0.5);
+
+    /* Document Fonts */
+    --font: 'Darker Grotesque', sans-serif;
+    --heavy: 700;
+    --regular: 400;
+}
+
+/* #2 - Universal Document Properties */
+
+html, body {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: var(--regular);
+    color: var(--black);
+    font-size: 24px;
+    line-height: 140%;
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2 {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: var(--heavy);
+    font-size: 50px;
+    line-height: 110%;
+}
+
+.underline {
+    text-decoration: underline solid var(--borders);
+    text-decoration-thickness: 8px;
+}
+
+a:link, a:visited, a:hover, a:focus, a:active {
+    text-decoration: none
+}
+
+/* #3 - Navigation */
+
+/* Navigation Logo */
+.logo {
+    width: 93px;
+    height: 26px;
+    display: inline-block;
+    padding-top: 16px;
+    padding-right: 16px;
+}
+
+.logo a:hover, .logo a:focus {
+    opacity: 0.5;
+}
+
+/* Navigation Conainer */
+nav {
+    width: 100%;
+    height: 64px;
+    background-color: var(--black);
+    margin: auto;
+    text-align: center;
+}
+
+.navigation-container {
+    width: 1200px;
+    display: inline-block;    
+}
+
+@media only screen and (max-width: 1200px) {
+    .navigation-container {
+        width: 960px
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .navigation-container {
+        width: 768px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation-container {
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .navigation-container {
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .navigation-container {
+        width: 320px
+    }
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 10px 16px 0 16px;
+}
+
+.nav-item-active {
+    display: inline-block;
+    padding: 0 15px 0 15px;
+}
+
+.nav-item a, .nav-item a:link, .nav-item a:visited, .nav-item a:active {
+    color: var(--white);
+    opacity: 0.5;
+    font-size: 18px;
+}
+
+.nav-item a:hover, .nav-item a:focus {
+    color: var(--bright-green);
+    opacity: 1;
+    font-weight: var(--heavy);
+}
+
+.nav-item-active a, .nav-item-active a:link, .nav-item-active a:visited, .nav-item-active a:active {
+    color: var(--bright-green);
+    opacity: 1;
+    font-size: 18px;
+    font-weight: var(--heavy);
+}
+
+.nav-item-active a:hover, .nav-item a:focus {
+    color: var(--white);
+    opacity: 0.5;
+}
+
+.left-nav, .logo-nav {
+    float: left;
+}
+
+.right-nav {
+    float: right;
+}
+
+/* #4 - Home Header */
+
+#home-header {
+    width: 100%;
+    background-color: var(--black);
+    text-align: center;
+    margin: auto;
+}
+
+.header-container {
+    width: 1200px;
+    display: inline-block;
+    padding: 150px 0 150px 0;
+}
+
+.header-content-container h1 {
+    color: var(--white);
+    width: 800px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.header-content-container p {
+    color: var(--white);
+    opacity: 0.5;
+    width: 600px;
+    margin: auto;
+    padding-bottom: 32px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-container {
+        width: 960px
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .header-container {
+        width: 768px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-container {
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .header-container {
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .header-container {
+        width: 320px
+    }
+}
+
+/* #5 - Buttons */
+
+.learn-more-btn, .how-work-btn {
+    text-align: center;
+    line-height: 21.6px;
+    border-radius: 4px;
+    font-size: 18px;
+    border: none;
+    margin: 0 12px 0 12px;
+}
+
+.learn-more-btn {
+    background-color: var(--bright-green);
+    color: var(--black);
+    width: 123px;
+    height: 44px;
+}
+
+.learn-more-btn:hover, .learn-more-btn:focus, .learn-more-btn:active {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--bright-green);
+}
+
+.how-work-btn {
+    background: rgba(0, 0, 0, 0.5) url('../images/play-icon.svg') no-repeat center left;
+    color: var(--bright-green);
+    width: 163px;
+    height: 45px;
+    padding-left: 25px;
+}
+
+.how-work-btn:hover, .how-work-btn:focus {
+    background: var(--bright-green) url('../images/play-icon-black.svg') no-repeat center left;
+    color: var(--black);
+}
