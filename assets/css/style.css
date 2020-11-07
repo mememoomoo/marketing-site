@@ -25,7 +25,7 @@
 ---------------------
 #8 - Works with Brand (Home Page)
 ---------------------
-#9 - 
+#9 - Data Sources (Home Page)
 ---------------------
 #10 - 
 ---------------------
@@ -449,6 +449,7 @@ nav {
     width: 100%;
     background-color: #F7F9FB;
     padding: 100px 0 100px 0;
+    border: 1px 0 1px 0  solid #DFE5EC;
 }
 
 .brand-content-container {
@@ -467,4 +468,130 @@ nav {
     font-weight: var(--regular);
     color: var(--text);
     padding: 16px 0 30px 0
+}
+
+.works-with {
+    color: var(--text);
+    font-size: 18px;
+    font-weight: var(--regular);
+}
+
+.works-with-brands {
+    color: var(--black);
+    font-size: 16px;
+    order: 2;
+    padding: 0 32px 0 10px;
+}
+
+.works-with-logos {
+    display: flex;
+    padding-top: 15px;
+}
+
+.google-slides {
+    order: 1;
+    display: flex;
+}
+
+.power-point {
+    order: 2;
+    display: flex
+}
+
+.google-slides-logo {
+    order: 1;
+    background: url('../images/google-drive-logo.svg');
+    width: 32px;
+    height: 28px;
+}
+
+.power-point-logo {
+    order: 1;
+    background: url('../images/powerpoint-logo.svg');
+    width: 34px;
+    height: 32px;
+}
+
+/* Data Sources */
+
+.data-sources-container {
+    width: 100%;
+    background-color: var(--white);
+    padding: 100px 0 100px 0
+}
+
+.centered-data-sources-container {
+    width: 1200px;
+    margin: auto;
+    display: flex
+}
+
+.data-sources {
+    order: 1
+}
+
+.data-sources-text {
+    order: 2;
+    padding-top: 20px;
+}
+
+.data-sources-h2 {
+    width: 700px;
+    padding-bottom: 20px;
+}
+
+.data-sources-text p {
+    width: 630px;
+    font-size: 24px
+}
+
+.data-sources-table {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-content: space-between;
+    flex-direction: row;
+    width: 575px;
+}
+
+.data-source-option {
+    width: 166px;
+    height: 129px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    font-size: 15px;
+    text-align: center;
+}
+
+.presto {
+    order: 1;
+    background: #EAEFF9;
+}
+
+.bigquery {
+    order: 2;
+    background: #F3F6F9;
+}
+
+.sheets {
+    order: 3;
+    background: #D3F4E4;
+}
+
+.redshift {
+    order: 4;
+    background: #E9F1F9;
+}
+
+.looker {
+    order: 5;
+    background: #E9E6F9;
+}
+
+.salesforce {
+    order: 6;
+    background: #DEF1F8;
 }
