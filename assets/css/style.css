@@ -15,15 +15,15 @@
     Navigation Conainer
     Top Nav Items
 ---------------------
-#4 - Home Header
+#4 - Header (Home)
 ---------------------
 #5 - Buttons
 ---------------------
-#6 - 
+#6 - Demo Video (Home Page)
 ---------------------
-#7 - 
+#7 - Time Section (Home Page)
 ---------------------
-#8 - 
+#8 - Works with Brand (Home Page)
 ---------------------
 #9 - 
 ---------------------
@@ -277,4 +277,194 @@ nav {
 .how-work-btn:hover, .how-work-btn:focus {
     background: var(--bright-green) url('../images/play-icon-black.svg') no-repeat center left;
     color: var(--black);
+}
+
+/* #6 - Demo Video */
+
+.video-container {
+    width: 100%;
+    background: linear-gradient(to bottom, var(--black) 0%,var(--black) 50%, var(--black) 50%,var(--white) 50%,var(--white) 100%);
+    margin: auto;
+    text-align: center;
+}
+
+.demo-video {
+    background-color: var(--light-grey);
+    margin: auto;
+    width: 1200px;
+    height: 660px;
+    border-radius: 4px;
+    border: 1px solid #DFE5EC;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
+}
+
+.demo-text, .demo-text:active, .demo-text:visited, .demo-text:link {
+    color: var(--text);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    display: block;
+}
+
+.demo-text:hover, .demo-text:focus {
+    color: var(--bright-green)
+}
+
+/* #7 - Time Section  */
+
+.time-section-container {
+    width: 100%;
+    padding: 100px 0 100px 0;
+    background-color: var(--white);
+}
+
+.time-container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.time-content {
+    width: 730px;
+    order: 2;
+    padding-top: 90px;
+}
+
+.bar-graph-container {
+    width: 470px;
+    order: 1;
+    display: flex;
+}
+
+.manual-graph-container {
+    margin-right: 36px;
+}
+
+.manual-graph {
+    text-align: center;
+    background-color: #F7F9FB;
+    width: 168px;
+    height: 338px;
+    position: relative;
+    order: 1;
+    border-radius: 4px;
+}
+
+.manual-graph p {
+    position: absolute;
+    bottom: 0;
+    left: 23px;
+    font-weight: bold;
+    font-size: 22px;
+    width: 120px;
+    line-height: 120%;
+    padding-bottom: 22px;
+}
+
+.matik-graph {
+    text-align: center;
+    background: linear-gradient(to bottom, var(--white) 0%,var(--white) 50%, var(--white) 68%,var(--bright-green) 32%,var(--bright-green) 100%);
+    width: 168px;
+    height: 338px;
+    position: relative;
+    order: 2;
+    border-radius: 4px;
+}
+
+.matik-graph p {
+    position: absolute;
+    bottom: 0;
+    left: 23px;
+    font-weight: bold;
+    font-size: 22px;
+    width: 120px;
+    line-height: 120%;
+    padding-bottom: 22px;
+}
+
+.matik-graph-logo {
+    width: 60px;
+    height: 60px;
+    border: var(--white) solid 4px;
+    border-radius: 50px;
+    background-color: var(--bright-green);
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+    background: var(--bright-green) url("../images/logo-white.svg") no-repeat center center;
+}
+
+.graph-label {
+    text-align: center;
+    font-size: 16px;
+    line-height: 110%;
+    color: var(--labels);
+    padding-top: 10px;
+}
+
+.time-quote-container {
+    border-top: var(--light-grey) solid 1px;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+.time-quotation {
+    color: var(--labels);
+    font-size: 32px;
+    font-weight: var(--regular)
+}
+
+.time-quote {
+    color: var(--black);
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: var(--regular);
+}
+
+.time-quote-attribute-container {
+    display: flex;
+    padding-top: 16px
+}
+
+.time-attribute-name-container {
+    order: 2;
+    color: var(--text);
+    font-size: 16px;
+    line-height: 22.4px;
+    padding-left: 10px;
+}
+
+.envoy-logo {
+    order: 1;
+    width: 33px;
+    height: 38px;
+    border: #EF3934 solid 2px;
+    border-radius: 4px;
+    background: var(--white) url("../images/envoy-logo.svg") no-repeat center center;
+}
+
+/* #8 - Works with Brand */
+
+.brand-container {
+    width: 100%;
+    background-color: #F7F9FB;
+    padding: 100px 0 100px 0;
+}
+
+.brand-content-container {
+    width: 1200px;
+    margin: auto
+}
+
+.brand-h2 {
+    width: 570px;
+}
+
+.brand-sub-text {
+    width: 570px;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: var(--regular);
+    color: var(--text);
+    padding: 16px 0 30px 0
 }
