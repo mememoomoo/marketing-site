@@ -27,7 +27,11 @@
 ---------------------
 #9 - Data Sources (Home Page)
 ---------------------
-#10 - 
+#10 - Testimonial (Home Page)
+---------------------
+#11 - Request a Demo CTA (Home Page)
+---------------------
+#12 - Footer
 ---------------------
 */
 
@@ -245,7 +249,7 @@ nav {
 
 /* #5 - Buttons */
 
-.learn-more-btn, .how-work-btn {
+.learn-more-btn, .how-work-btn, .demo-btn {
     text-align: center;
     line-height: 21.6px;
     border-radius: 4px;
@@ -258,6 +262,13 @@ nav {
     background-color: var(--bright-green);
     color: var(--black);
     width: 123px;
+    height: 44px;
+}
+
+.demo-btn {
+    background-color: var(--bright-green);
+    color: var(--black);
+    width: 164px;
     height: 44px;
 }
 
@@ -564,6 +575,51 @@ nav {
     border: 1px solid rgba(0, 0, 0, 0.05);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
     font-size: 15px;
+    position: relative;
+    bottom: 0
+}
+
+.data-source-logo {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+}
+
+.presto-logo {
+    background: url("../images/presto-logo.svg") no-repeat center center;
+    height: 45px;
+    padding-left: 10px;
+}
+
+.bigquery-logo {
+    background: url("../images/google-cloud-logo.svg") no-repeat center center;
+    height: 50px;
+}
+
+.google-sheets-logo {
+    background: url("../images/google-sheets-logo.svg") no-repeat center center;
+    height: 56px;
+}
+
+.redshift-logo {
+    background: url("../images/redshift-logo.svg") no-repeat center center;
+    height: 58px;
+}
+
+.looker-logo {
+    background: url("../images/looker-logo.svg") no-repeat center center;
+    height: 44px;
+}
+
+.salesforce-logo {
+    background: url("../images/salesforce-logo.svg") no-repeat center center;
+    height: 48px;
+}
+
+.data-source-option p {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
     text-align: center;
 }
 
@@ -625,4 +681,154 @@ nav {
 .salesforce img {
     width: 68px;
     height: 47.6px;
+}
+
+/* #10 - Testimonial */
+
+.testimonial-container {
+    width: 100%;
+    background: var(--black);
+    padding: 100px 0
+}
+
+.testimonial-content-container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.testimonial-image-container {
+    background-image: url("../images/hover-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 576px;
+    height: 360px;
+    text-align: center;
+    order: 1;
+}
+
+.hover-logo {
+    padding: 160px 0
+}
+
+.testimonial-copy {
+    color: var(--white);
+    width: 624px;
+    background-color: rgba(49, 74, 92, 0.5);
+    order: 2;
+    padding: 35px 0
+}
+
+.testimonial-quote {
+    font-size: 30px;
+    line-height: 120%;
+    font-weight: var(--heavy);
+    width: 540px;
+    margin: auto
+}
+
+.testimonial-quote-attribute {
+    width: 540px;
+    margin: auto;
+    color: var(--white);
+    opacity: 0.4;
+    font-size: 18px;
+    line-height: 140%;
+    padding-top: 20px
+}
+
+/* Request a Demo CTA */
+
+.demo-cta-container {
+    width: 100%;
+    background: var(--black);
+    padding: 100px 0
+}
+
+.demo-cta-content-container {
+    width: 1200px;
+    margin: auto;
+    text-align: center
+}
+
+.demo-cta-h2 {
+    color: var(--white);
+}
+
+.demo-cta-content-container p {
+    font-size: 24px;
+    line-height: 140%;
+    color: var(--white);
+    opacity: 0.6;
+    padding: 8px 0 32px 0;
+}
+
+/* Footer */
+
+#footer-nav {
+    width: 100%;
+    padding: 25px 0 50px 0;
+    background: var(--black);
+    margin: auto;
+    text-align: center;
+}
+
+.footer-container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.bottom-nav-item {
+    display: inline-block;
+    padding: 0 0 0 16px;
+}
+
+.bottom-nav-item a, .bottom-nav-item a:link, .bottom-nav-item a:visited, .bottom-nav-item:active {
+    color: var(--white);
+    opacity: 0.5;
+    font-size: 18px;
+}
+
+.bottom-nav-item a:hover, .bottom-nav-item a:focus {
+    color: var(--bright-green);
+    opacity: 1;
+}
+
+.logo-nav {
+    float: left;
+    order: 1;
+}
+
+.bottom-center-nav {
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    order: 2;
+}
+
+.bottom-right-nav {
+    float: right;
+    order: 3;
+}
+
+.copyright-container p {
+    color: var(--labels);
+    opacity: 0.5;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    padding-top: 40px
+}
+
+.footer-logo {
+    background: url("../images/footer-logo\ -white.svg") no-repeat center;
+    width: 125px;
+    height: 35px;
+    opacity: 0.6;
+}
+
+.footer-logo:hover, .footer-logo:focus {
+    opacity: 1.0
 }

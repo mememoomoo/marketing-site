@@ -121,12 +121,12 @@
         <div class="centered-data-sources-container">
             <div class="data-sources">
                 <div class="data-sources-table">
-                    <div class="data-source-option presto"><img src="assets/images/presto-logo.svg" />Presto</div>
-                    <div class="data-source-option bigquery"><img src="assets/images/google-cloud-logo.svg" />Google Bigquery</div>
-                    <div class="data-source-option sheets"><img src="assets/images/google-sheets-logo.svg" />Google Sheets</div>
-                    <div class="data-source-option redshift"><img src="assets/images/redshift-logo.svg" />AWS Redshift</div>
-                    <div class="data-source-option looker"><img src="assets/images/looker-logo.svg" />Looker</div>
-                    <div class="data-source-option salesforce"><img src="assets/images/salesforce-logo.svg" />Salesforce</div>
+                    <div class="data-source-option presto"><div class="data-source-logo presto-logo"></div><p>Presto</p></div>
+                    <div class="data-source-option bigquery"><div class="data-source-logo bigquery-logo"></div><p>Google Bigquery</p></div>
+                    <div class="data-source-option sheets"><div class="data-source-logo google-sheets-logo"></div><p>Google Sheets</p></div>
+                    <div class="data-source-option redshift"><div class="data-source-logo redshift-logo"></div><p>AWS Redshift</p></div>
+                    <div class="data-source-option looker"><div class="data-source-logo looker-logo"></div><p>Looker</p></div>
+                    <div class="data-source-option salesforce"><div class="data-source-logo salesforce-logo"></div><p>Salesforce</p></div>
                 </div>
             </div>
             <div class="data-sources-text">
@@ -140,13 +140,13 @@
     <section class="testimonial-container">
         <div class="testimonial-content-container">
             <div class="testimonial-image-container">
-                <img class="hover-logo" src="#" />
+                <img class="hover-logo" src="assets/images/hoverlogowhite.svg" />
             </div>
             <div class="testimonial-copy">
-                <p class="testominal-quote">“We saw impact immediately from Matik. The ease of use and ability to quickly pull data from different sources into a customer facing presentation has helped us increase our velocity and effectiveness as a sales organization.”</p>
-                <div class="testominal-quote-attribute">
-                    <span>Jamie Sharpless</span><br>
-                    <span>Strategy Lead - Business Operations</span>
+                <p class="testimonial-quote">“We saw impact immediately from Matik. The ease of use and ability to quickly pull data from different sources into a customer facing presentation has helped us increase our velocity and effectiveness as a sales organization.”</p>
+                <div class="testimonial-quote-attribute">
+                    <p>Jamie Sharpless</p>
+                    <p>Strategy Lead - Business Operations</p>
                 </div>
             </div>
         </div>
@@ -157,31 +157,33 @@
         <div class="demo-cta-content-container">
             <h2 class="demo-cta-h2">Start <span class="underline">saving time</span> with Matik</h2>
             <p>Schedule a quick demo to learn more</p>
-            <a class="learn-more-btn" href="#">Request a Demo</a>
+            <a href="#"><button class="demo-btn">Request a Demo</button></a>
         </div>
     </section>
 
     <!--Footer-->
-    <footer>
-        <nav id="bottom-nav">
-            <ul class="bottom-right-nav">
-                <li class="bottom-nav-item"><a href="#"><img class="footer-logo" src="#" /></a></li>
-            </ul>
+
+    <footer id="footer-nav">
+        <div class="footer-container">
+            <div class="logo-nav">
+                <div class="bottom-nav-item"><a href="#"><div class="footer-logo" src="#"></div></a></div>
+            </div>
             <ul class="bottom-center-nav">
-                <li class="nav-item"><a href="#">Product</a></li>
-                <li class="nav-item"><a href="#">Solutions</a></li>
-                <li class="nav-item"><a href="#">About</a></li>
-                <li class="nav-item"><a href="#">Privacy Policy</a></li>
-                <li class="nav-item"><a href="#">Terms</a></li>
+                <li class="bottom-nav-item"><a href="#">Product</a></li>
+                <li class="bottom-nav-item"><a href="#">Solutions</a></li>
+                <li class="bottom-nav-item"><a href="#">About</a></li>
+                <li class="bottom-nav-item"><a href="#">Privacy Policy</a></li>
+                <li class="bottom-nav-item"><a href="#">Terms</a></li>
             </ul>
-            <ul class="bottom-left-nav">
-                <li class="nav-item"><a href="#">Follow us on LinkedIn</a></li>
-            </ul>
-        </nav>
+            <div class="bottom-right-nav">
+                <div class="bottom-nav-item"><a href="#">Follow us on LinkedIn</a></div>
+            </div>
+        </div>
         <div class="copyright-container">
-            <p>&#169; 2020 Matik, Inc.</p>
+            <p>&#169; 2020 Matik Inc.</p>
         </div>
     </footer>
+    
     <script src="assets/js/app.js"></script>
 </body>
 </html>
