@@ -14,6 +14,7 @@
     Navigation Logo
     Navigation Conainer
     Top Nav Items
+    Mobile Menu
 ---------------------
 #4 - Header (Home)
 ---------------------
@@ -29,7 +30,7 @@
 ---------------------
 #10 - Testimonial (Home Page)
 ---------------------
-#11 - Request a Demo CTA (Home Page)
+#11 - Request a Demo CTA
 ---------------------
 #12 - Footer
 ---------------------
@@ -175,36 +176,6 @@ nav {
     display: inline-block;    
 }
 
-@media only screen and (max-width: 1200px) {
-    .navigation-container {
-        width: 960px
-    }
-}
-
-@media only screen and (max-width: 960px) {
-    .navigation-container {
-        width: 768px
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .navigation-container {
-        width: 550px;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-    .navigation-container {
-        width: 380px;
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    .navigation-container {
-        width: 320px
-    }
-}
-
 .nav-item {
     display: inline-block;
     padding: 10px 16px 0 16px;
@@ -245,6 +216,131 @@ nav {
 
 .right-nav {
     float: right;
+}
+
+.mobile-navigation-container {
+    display: none;
+    width: 380px;
+    height: 50px;
+    margin: auto;
+}
+
+.mobile-nav-logo {
+    width: 93px;
+    height: 26px;
+    background: url("../images/full-logo-white.svg") no-repeat center;
+    padding-top: 23px;
+    order: 1;
+}
+
+.mobile-nav-menu {
+    order: 2;
+    width: 50px;
+    height: 50px;
+    background: url("../images/menu_open.svg") no-repeat center;
+    margin-left: auto
+}
+
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-mobile.is-open {
+    display: inline-block
+}
+
+.mobile-menu-container {
+    margin: auto;
+    width: 320px;
+    height: 400px;
+    padding-top: 50px
+}
+
+.circle-container {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 200px;
+    background: var(--black);
+    border: var(--bright-green) 2px solid;
+}
+
+.close-mobile-menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: var(--black) url('../images/close.svg') no-repeat center;
+    border: var(--bright-green) 2px solid;
+    position: absolute;
+    right: 0;
+    margin-right: 60px;
+}
+
+.circle-container ul {
+    padding-top: 30px
+}
+
+.mobile-nav-item {
+    padding-bottom: 10px
+}
+
+.mobile-nav-item a, .mobile-nav-item a:link, .mobile-nav-item a:visited, .mobile-nav-item a:active {
+    color: var(--white);
+    opacity: 0.5;
+    font-size: 18px;
+}
+
+.mobile-nav-item a:hover, .mobile-nav-item a:focus {
+    color: var(--bright-green);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navigation-container {
+        width: 960px
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .navigation-container {
+        width: 768px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation-container {
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .navigation-container {
+        width: 380px;
+        display: none
+    }
+
+    .mobile-navigation-container {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .mobile-navigation-container {
+        width: 320px
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .mobile-navigation-container {
+        width: 300px
+    }
 }
 
 /* #4 - Home Header */
